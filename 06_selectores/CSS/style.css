@@ -1,0 +1,19 @@
+/*Selector de descendientes: operador o simbolo es el espacio*/
+section p {
+    color: blueviolet;
+}
+
+/*Selector de hijo: operador o simbolo >*/
+section>p {
+    color: violet;
+}
+
+/*Selector de hermano: operador ~ (virgulilla)*/
+div~p {
+    color: darkmagenta;
+}
+
+/*Selector de hermanos adyacentes: operador + */
+div+p {
+    color: deeppink;
+}

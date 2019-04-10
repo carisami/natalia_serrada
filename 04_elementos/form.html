@@ -19,43 +19,101 @@
 </head>
 <body>
     <header>
-           <h1>Elementos de HTML 😄</h1>
-           <nav>
-               <ul>
-                   <li><a href="./index.html">Inicio</a></li>
-                   <li><a href="./index.html#bloques">En bloque</a></li>
-                   <li><a href="./index.html#linea">En linea</a></li>
-                   <li><a href="./mmedia.html">Multimedia</a></li>
-                   <li><a href="#">Formulario</a></li>
-               </ul>
-           </nav>
+        <h1>Elementos de HTML 😄</h1>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./index.html#bloques">En bloque</a></li>
+                <li><a href="./index.html#linea">En linea</a></li>
+                <li><a href="./mmedia.html">Multimedia</a></li>
+                <li><a href="#">Formulario</a></li>
+            </ul>
+        </nav>
     </header>
     <div class="content-wrapper">
         <main>
-           <section id="form">
-               <header>
-                   <h2>Formulario</h2>
-               </header>
-               <p>Estan disponibles los siguientes controles</p>
-               <ul>
-                   <li>input-text</li>
-                   <li>text area</li>
-                   <li>checkbox</li>
-                   <li>radio butons</li>
-                   <li>select/options</li>
-                   <li>botones</li>
-               </ul>
-               <h3>Ejemplo de formulario</h3>
-               <form action="https://jsonplaceholder.typicode.com/users" method="POST">
-                    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-                    <button type="submit">Enviar</button>
+            <section id="form">
+                <header>
+                    <h2>Formulario</h2>
+                </header>
+                <p>Estan disponibles los siguientes controles</p>
+                <ul>
+                    <li>input-text</li>
+                    <li>text area</li>
+                    <li>checkbox</li>
+                    <li>radio butons</li>
+                    <li>select/options</li>
+                    <li>botones</li>
+                </ul>
+                <h3>Ejemplo de formulario</h3>
+                <form action="https://jsonplaceholder.typicode.com/users" method="POST">
+                    <fieldset>
+                        <legend>Datos personales</legend>
+                        <div>
+                            <label for="nombre">Nombre</label>
+                            <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellidos" required minlength="3">
+                        </div>
+                        <div>
+                            <label for="email">Corero</label>
+                            <input type="email" name="email" id="email" placeholder="correo" required>
+                        </div>
+                        <div>
+                            <label for="passwd">Contraseña</label>
+                            <input type="password" name="passwd" id="passwd" required maxlength="4">
+                        </div>
+                        <div>
+                            <label for="coments">Comentarios</label>
+                            <textarea name="coments" id="coments" cols="20" rows="5"></textarea>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Condiciones</legend>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, repellat esse quisquam
+                            vel totam delectus reprehenderit, possimus perspiciatis non accusantium dolor eius hic
+                            fugiat praesentium sunt aliquid dignissimos odio sit.</p>
+                        <div>
+                            <input type="checkbox" name="aceptado" id="aceptado" required>
+                            <label for="aceptado" >Acepto las condiciones</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Datos del curso</legend>
+                        <div>
+                            <label for="curso">Curso</label>
+                            <select name="curso" id="curso" multiple required>
+                                <option value="">&nbsp;</option>
+                                <optgroup label="Front">
+                                    <option value="HTML">HTML</option>
+                                    <option value="CSS">CSS</option>
+                                    <option value="JS">JavScript</option>
+                                </optgroup>
+                                <optgroup label="Back">
+                                    <option value="JS">JavScript</option>
+                                    <option value="Node">NodeJS</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div>
+                            <p>Sede</p>
+                            <input type="radio" name="sede" id="Madrid" value="Madrid" required>
+                            <label for="Madrid">Madrid</label>
+                            <input type="radio" name="sede" id="barna" value="barna">
+                            <label for="barna">Barcelona</label>
+                            <input type="radio" name="sede" id="badajoz" value="Badajoz">
+                            <label for="badajoz">Badajoz</label>
+                        </div>
+                    </fieldset>
+                    <div>
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Borrar</button>
+                    </div>
                 </form>
-           </section> 
+            </section>
         </main>
-    <aside id="publici">
-        <p>Publicidad</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto in dolores maxime obcaecati quisquam cupiditate quas ullam, nemo repellendus commodi perferendis earum tempore iure laborum officiis adipisci enim asperiores optio?</p>
-    </aside>
+        <aside id="publici">
+            <p>Publicidad</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto in dolores maxime obcaecati quisquam cupiditate quas ullam, nemo repellendus commodi perferendis earum tempore iure laborum officiis adipiscienim asperiores optio</p>
+        </aside>
     </div>
     <footer>
         <address>Natalia Serrada</address>

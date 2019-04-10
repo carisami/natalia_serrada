@@ -1,0 +1,33 @@
+/*Selector de etiqueta y agrupados*/
+h1, h2 {
+    color: blue;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+p {
+    color: aqua;
+}
+
+/*Selectores de id
+    Buena practica: NO SE USAN    
+*/
+#p01 {
+    color: aquamarine;
+}
+
+/*Selectores de clase*/
+.resaltado {
+    color: cornflowerblue
+}
+
+/*Selectores de atributo*/
+[name="nombre"] {
+    background-color: lightcyan
+}
