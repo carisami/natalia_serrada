@@ -1,3 +1,54 @@
-section p::first-letter {
+
+
+/*PSEUDO ELEMENTOS*/
+section>p::first-letter {
     font-size: 4rem;
 }
+
+aside p::first-line {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+section div p::before {
+    content: "⚠️";
+}
+
+/*PSEUDO CLASES*/
+p:hover {
+    color: red;
+}
+
+/*Sirve para cambiar el color del enlace una vez le pinchas*/
+a:visited {
+    color: deeppink;
+}
+
+/* section p:nth-child(1) {
+    color: blue;
+} */
+
+section p:nth-of-type(even) {
+    color: blue;
+}
+
+/*El asterisco es para seleccionar TODO, y el asterisco con este atributo es para que vaya todo en lina*/
+/* * {
+    display: inline;
+} */
+
+/*es para hacer un cuadrado a todo el body*/
+body {
+    font-family: 'Open Sans Condensed', 'Lucida', sans-serif;
+    border: 1px solid;
+}
+
+/*  Esto sirve para poner cuadrado a todo y cada uno de los parrafos por separado* {
+    font-family: 'Open Sans Condensed', 'Lucida', sans-serif;
+    border: 1px solid;
+} */
+
+header {
+    font-family: 'Lobster', cursive;
+}
+
