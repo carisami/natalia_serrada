@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.cuadrados p {
+    width: 15%;
+    float: left;
+    margin: calc(calc(100% - calc(15%*5)) / 10);
+    padding: 1rem;
+    background-color: coral;
+    border: 1px solid;
+    /* display: inline-block; */
+}
+
+.clearfix {
+    clear: both;
+}
+
+.real {
+    margin: 2rem;
+}
+
+.real p {
+    float: left;
+    width: 33.33%;
+}
+
+.real p:not(:first-child) {
+    padding-left: 1.5rem;
+}
