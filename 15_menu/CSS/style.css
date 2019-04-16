@@ -107,4 +107,5 @@ body {
 
 .social-menu li { /*Para poner en linea los enlaces de fb tw etc*/
     display: inline;
+    color: #3838f5;
 }
