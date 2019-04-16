@@ -1,0 +1,53 @@
+img {
+ /*    width: fit-content;
+    max-width: 100%; */
+    width: 100%;
+}
+
+p {
+    text-align: justify;
+}
+
+.image-wrapper-50 {
+    width: 50%;
+    float: right;
+    margin-left: 1rem; 
+}
+
+.image-wrapper-25 {
+    width: 25%;
+    float: right;
+    margin-left: 1rem;
+}
+
+.image-wrapper-25B {
+    width: 25%;
+}
+
+.image-wrapper-75 {
+    width: 75%;
+}
+
+.clearfix {
+    clear: both;
+    border-top: 1px solid gainsboro;
+}
+
+.fondos {
+    height: 100vh;
+    background-color: #E1E3EF;
+    background-image: url('../assets/3boats.jpg');
+    background-repeat: no-repeat;
+/*  background-size: contain; */
+    background-size: cover;
+    background-blend-mode: soft-light;
+/*     opacity: 0.5; */
+}
+
+.fondos h2 {
+    text-align: center;
+    /* line-height: 100vh; */
+    padding-top: 25vh;
+    color: #0165BA;
+/*     opacity: 1; */
+}
