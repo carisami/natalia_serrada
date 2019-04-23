@@ -1,8 +1,6 @@
 let data = 11
-data = 45
-duplicar(data)
-console.log(data)
 console.log(duplicar(data))
+console.log(data)
 
 // Los datos primitivos pasan a la funcion como valores
 function duplicar(x) {
@@ -10,10 +8,14 @@ function duplicar(x) {
     return x
 }
 
-let user = {nombre:'pepe', edad: '23'}
-matricular (user)
-console.log(user)
 
-function matricular(obj) {
-    obj.curso = 'JavaScript'
+let user1 = {nombre:'pepe', edad: 23}
+matricular (user1, 'HTML')
+console.log(user1)
+let user2 = {nombre: 'Rosa'}
+matricular (user2)
+console.log(user2)
+
+function matricular(obj, curso = 'JavaScript') {
+    obj.curso = curso
 }

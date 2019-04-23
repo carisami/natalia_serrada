@@ -1,4 +1,4 @@
-// let data = 20
+let data = 20
 data = 30
 
 console.log(data)
@@ -21,7 +21,7 @@ const user = {
 user.altura = 179;
 user.name = 'Carlos'
 
-// user = 23; MUY MALA IDEA
+// user = 23; MUY MALA IDEA (da error), por que se está creando una variable nueva
 
 console.log(user)
 console.log(user.name)

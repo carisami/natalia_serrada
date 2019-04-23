@@ -4,6 +4,8 @@
 
 //Ambito global
 let var1 = 20;
+prueba()
+
 
 // MUY MALA PRACTICA 
 //No se accede nunca a las variables globales desde las funciones
@@ -11,17 +13,17 @@ function prueba() {
     console.log(var1)
 }
 
-prueba()
 
 //Lo mismo con BUENAS PRACTICAS
 
 let var2 = 30;
+pruebaBien(var2)
+
+
 
 function pruebaBien (x) {
     console.log(x)
 }
-
-pruebaBien(var2)
 
 // Nuevo en ES6 usar let en lugar de var
 
