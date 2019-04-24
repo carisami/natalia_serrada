@@ -1,4 +1,5 @@
 /* // Tipos de Strings
+
 let cadena = 'Hola Mundo'
 cadena = "Hola Mundo"
 // ES6 aparecen los template string
@@ -9,6 +10,7 @@ Mundo
 let user = 'Pepe'
 cadena = 'Hola ' + user + ', que tal estas'
 cadena = `Hola ${user}, que tal estas`
+
 console.log(cadena) */
 
 /**
@@ -24,12 +26,25 @@ console.log(cadena) */
   * Posibles valores
   *     0 pares
   *     1 impares
+  *     2 numeros decimales
+  *     3 no numeros
   * */
  
  function  calculaQueEs(num) {
-    return num % 2
+     let r
+     if (isNaN(num) || Array.isArray(num) || typeof num === 'boolean') {
+         // num === true || num === false
+         //no es un numero 
+        r = 3
+     } else if (parseInt(num) !=num) {
+         // no es un numero decimal 
+         r = 2
+     }      
+     else {
+        r = num % 2
+     }
+     return r
 }
-
 
 /**
 * Function isPar
@@ -38,9 +53,17 @@ console.log(cadena) */
 * Posibles valores
 *    true pares
 *    false impar
+*   genera excepciones si el parametro no es numerico
+*   2 - si el valor no es un numero decimal
+*   3 - si el valor es un numero 
 */
 
 function isPar(num) {
+    if (isNaN(num) || Array.isArray(num) || typeof num === 'boolean') {
+        throw 3//'El valor no es un numero '
+    }  else if (parseInt(num) !=num) {
+        throw 2//'El valor es un numero decimal'
+    }
     return !(num % 2)
 }
 
@@ -50,7 +73,6 @@ function isImpar(num) {
 
 /**
  * Function mostrar
- * @param isPar: bolean // sera true si el numero es PAR
  * @param num: number
  * @returns: void
  * 
@@ -68,17 +90,25 @@ function isImpar(num) {
     }
 } */
 
-function mostrar(isPar, num) {
+function mostrar(num) {
   let mensajes = [
       `El número ${num} es par`,
-      `El número ${num} es impar`
+      `El número ${num} es impar`,
+      `El número ${num} es decimal, que no es ni par ni impar`,
+      `El valor ${num} no es un numero`
   ] 
   /* let i = 1
   if (isPar) {
     i = 0
   }  */
-  let i = (isPar) ? 0 : 1
-  console.log(mensajes[i])
+  let i
+  try {
+    i = (isPar(num)) ? 0 : 1
+  } catch (error) {
+     console.log(error) 
+     i = error
+  }
+    console.log(mensajes[i])
 }
 
 /**
@@ -88,11 +118,18 @@ function mostrar(isPar, num) {
  * @returns: void
 */
 
-let number = 23
+let number = 0
+number = 23
 number = 28
+number = 3.5
 number = 'Pepe'
-number = 0
-mostrar(isPar(number), number)
+number = {}
+number = []
+number = true
+number = false
+
+
+mostrar(number)
 
 ////////////////////////////////////////////////////
 // Version final
@@ -100,12 +137,33 @@ mostrar(isPar(number), number)
 function mostrar2 (code, num) {
   let mensajes = [
       `El número ${num} es par`,
-      `El número ${num} es impar`
+      `El número ${num} es impar`,
+      `El número ${num} es decimal, que no es ni par ni impar`,
+      `El valor ${num} no es un numero`
   ] 
   console.log(mensajes[code])
 }
 
-let numero = 25
+let numero = 0
+numero = 25
 numero = 30
 numero = 'Pepe'
-mostrar2(numero % 2, numero)   
+numero = 3.3
+numero = {}
+numero = []
+numero = false
+numero = true
+
+//mostrar2(calculaQueEs(numero), numero)
+// mostrar2(numero % 2, numero)
+
+
+/* 
+try {
+    // noExiste()
+    let x = 3
+    throw 'Probando un error'
+} catch (error) {
+    console.log('Lo siento, ha habido un error: ', error)
+}
+ */
