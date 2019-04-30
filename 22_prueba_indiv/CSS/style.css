@@ -1,0 +1,102 @@
+*, *::after, *::before, *:after, *:before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.main-header {
+    background-color: rgb(247, 247, 105);
+    color: black;
+    padding: 2rem;
+    font-family: 'Amatic SC', cursive;
+}
+.main-header div {
+    margin: 1rem;
+    position: relative;
+}
+
+/* .main-header h1 {
+    margin: 0;
+    padding: 0;
+} */
+
+.main-header p {
+    margin-bottom: 0;
+    margin-top: 0.2rem;
+    /* display: none; */
+    visibility: hidden;
+}
+
+.main-menu {
+    border: 1px solid;
+    border-radius: 5px;
+    width: fit-content;
+    position: absolute;
+    top: 1px;
+    right: 1rem;
+}
+
+.main-menu li {
+    display: inline-block;
+}
+
+.main-menu a {
+    display: block;
+    margin: 0.1rem;
+    padding: 1rem;
+}
+
+.menu ol, .menu ul {
+    list-style: none;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    padding: 0;
+}
+
+.content-wrapper {
+    margin: 2rem;
+    /* overflow: auto; */ 
+}
+
+.main-content {
+    width: 70%;
+    float: left;
+    background-color: rgb(231, 227, 227);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.main-aside {
+    width: 30%;
+    float: left;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    background-color: rgb(240, 238, 228);
+}
+
+.main-footer {
+    background-color:rgb(240, 240, 145);
+    color: black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+img {
+       width: 100%;
+   }
+
+.image-dm {
+    width: 85%;
+    float: left;
+    margin-left: 1rem;
+}
+
+.clearfix { /*Rompe la cadena de flotacion*/
+    clear: both;
+    margin-bottom: 2rem;
+}
