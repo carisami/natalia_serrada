@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Generos y autores</title>
+    <title>Generos y Autores</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/bootstrap.js" type="module"></script>
 </head>
 <body>
     <header>
@@ -13,10 +14,23 @@
     </header>
     <section>
         <div>
-            <div>
-                <select name="" id="">
-                    <option value=" "></option>
+            <div class="control-group">
+                <label for="generos">Generos</label>
+                <select name="generos" id="generos">
+                    
                 </select>
+            </div>
+        </div>
+        <div>
+            <div class="control-group">
+                <label for="autores">Autores</label>
+                <select name="autores" id="autores">
+                </select>
+            </div>
+        </div>
+        <div>
+            <div class="control-group">
+                <button type="button" id="btnPedir" disabled>Pedir titulos</button>
             </div>
         </div>
     </section>
