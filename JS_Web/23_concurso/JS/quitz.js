@@ -140,21 +140,6 @@ $(function() {
 	}
 
 	// 
-	function countdownTick() {
-		timeLeftForQuestion -= 1;
-		updateTime();
-		if (timeLeftForQuestion == 0) { 
-			return finish();
-		}
-		questionTimer = setTimeout(countdownTick, 1000);
-	}
-
-	// 
-/* 	function updateTime() {
-		$('.countdown .time_left').html(timeLeftForQuestion + 's');
-	} */
-
-	// 
 	function updatePoints() {
 		$('.points span.points').html(points + ' puntos');
 	}

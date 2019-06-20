@@ -27,44 +27,14 @@ header h1, header h2 {
 	margin: 0;
 }
 
-/* header div.countdown {
-	float: right;
-} */
-
-/* header div.points {
-	float: left;
-	-webkit-transition: color 0.5s;
-    transition: color 0.5s;
-} */
-
-/* header div.points.animate.right {
-	color: #767D76;
-}
-
-header div.points.animate.wrong {
-	color: #bf0000;
-} */
-
-/* header div.countdown, header div.points {
-	font-weight: bold;
-	margin: 10px;
-	color: #fff;
-	padding: 0px;
-	font-size: 26px;
-} */
-
 .card {
     text-align: center;
     width: 500px;
-/* 	background-color: #fff; */
-	margin: 30px;
-	border-radius: 6px;
+	margin: auto;
+    border-radius: 6px;
+    text-align: center;
 	padding: 20px;
 }
-
-/* div.start .card {
-	display: block;
-} */
 
 div.start .card p, .question.card span.question {
 	font-size: 25px;
@@ -73,10 +43,6 @@ div.start .card p, .question.card span.question {
 .card.question {
 	display: none;
 }
-
-/* .card.question.active {
-	display: block;
-} */
 
 .card.question .options {
 	padding: 0;
@@ -109,10 +75,6 @@ div.start .card p, .question.card span.question {
 	display: none;
 }
 
-/* .finish {
-	display: none;
-} */
-
 .card.finish p {
 	font-size: 22px;
 }
@@ -132,7 +94,6 @@ button.start {
 .main-footer {
     background-color: violet;
     color: bisque;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding: 0.5rem;
     text-align: center;
 }
