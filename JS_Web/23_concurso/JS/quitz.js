@@ -1,44 +1,35 @@
-
 // 1
 var questions = [
 	[
-		"¿Que se utiliza para estilizar un sitio web?",
-		"Javascript",
-		"CSS",
-		"PHP",
-		"AngularJS",
+		"¿Cuanto es 1+1?",
+		"1",
+		"2",
+		"3",
+		"4",
 		1
 	],
 	[
-		"¿Qué tipo de lenguaje es PHP?",
-		"Interpretado",
-		"Compilado",
-		"Los 2 anteriores",
-		"Ninguno de los anteriores",
+		"¿Cuanto es 5+5?",
+		"10",
+		"0",
+		"25",
+		"55",
 		0
 	],
 	[
-		"¿jQuery es una biblioteca para qué lenguaje?",
-		"Python",
-		"PHP",
-		"Java",
-		"Ninguno de los anteriores",
+		"¿Cuanto es 5x5?",
+		"5",
+		"10",
+		"55",
+		"25",
 		3
 	],
 	[
-		"¿Cómo se marca el inicio de código PHP?",
-		"&lt;?php",
-		"&lt;?",
-		"Los 2 anteriores",
+		"¿Cuanto es 10-5?",
+		"0",
+		"10",
+		"5",
 		"Ninguno de los anteriores",
-		2
-	],
-	[
-		"¿Quién diseño Javascript?",
-		"Mark Zuckerberg",
-		"Bill Gates",
-		"Brendan Eich",
-		"Rasmus Lerdorf",
 		2
 	],
 ];
@@ -159,9 +150,9 @@ $(function() {
 	}
 
 	// 
-	function updateTime() {
+/* 	function updateTime() {
 		$('.countdown .time_left').html(timeLeftForQuestion + 's');
-	}
+	} */
 
 	// 
 	function updatePoints() {
@@ -218,5 +209,4 @@ $(function() {
 
 	// 
 	restart();
-
 });

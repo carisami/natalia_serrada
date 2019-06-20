@@ -1,39 +1,37 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Concurso</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" 
-    crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+<html>
+  <head>
+    <title>Quizzer</title>
+    <meta charset="utf-8">
+    <link href="./CSS/style.css" type="text/css" rel="stylesheet">
+    <script src="./JS/jquery.js"></script>
+    <script src="./JS/underscore.js"></script>
     <script src="./JS/quitz.js"></script>
-</head>
-<body>
-    <header class="main-header">
-        <h1>CONCURSO QUITZ</h1>
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <h1>Concurso Quitz</h1>
+      </div>
+<!--       <div class="countdown"><span class="time_left">12s</span></div>
+      <div class="points"><span class="points">0 points</span></div> -->
     </header>
-    <section>
-        <div class="enunciado">
-           <p>Escribe una fruta y comprueba si es correcto; si no lo es, sigue intentándolo.</p>
-        </div>
-        <div class="item-flex">
-            <h2>Frutas</h2>
-            <p>
-                <input type="text" name="fruta" id="in-nombre" placeholder="Escribe una fruta">
-            </p>
-            <button type="button" id="btnComprobar">¡Comprueba!</button>       
-            <p id="output"></p>
-        </div>
-        <br>
-        <div class="definicion">
-            <p>Se denomina fruta a aquellos frutos comestibles obtenidos de plantas cultivadas o silvestres que, por su sabor generalmente dulce-acidulado, su aroma intenso y agradable y sus propiedades nutritivas, suelen consumirse mayormente en su estado fresco, como jugo o como postre (y en menor medida, en otras preparaciones), una vez alcanzada la madurez organoléptica, o luego de ser sometidos a cocción.</p>
-        </div>
-    </section>
-    <footer class="main-footer">
-        <address>Natalia Serrada</address>
+    <div class="start">
+      <div class="card">
+        <p>¿Empezamos?</p>
+        <button class="start">Empezar</button>
+      </div>
+    </div>
+    <div class="play">
+      <div class="questions"></div>
+    </div>
+    <div class="finish card">
+      <p class="times_up">¡Se acabó el tiempo!</p>
+      <p>Has obtenido</p>
+      <p class="final_points">8 puntos</p>
+    </div>
+    <footer>
+        <address class="main-footer">Natalia Serrada</address>
     </footer>
-</body>
+  </body>
 </html>
