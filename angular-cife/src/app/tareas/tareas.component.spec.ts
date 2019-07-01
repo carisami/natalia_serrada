@@ -11,16 +11,16 @@ describe('TareasComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [
+      declarations: [ 
         TareasComponent,
         ListaSimpleComponent
-      ],
-      imports: [
-        FormsModule,
-        FontAwesomeModule
-      ]
+       ],
+       imports: [
+         FormsModule,
+         FontAwesomeModule
+        ]
     })
-      .compileComponents();
+    .compileComponents();
   }));
 
   beforeEach(() => {

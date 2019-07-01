@@ -13,7 +13,7 @@ export class NuevoPostComponent implements OnInit {
 
   constructor() {
     this.eventGuardar = new EventEmitter();
-  }
+   }
 
   ngOnInit() {
     this.post = new Post();

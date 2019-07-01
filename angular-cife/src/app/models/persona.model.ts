@@ -9,3 +9,4 @@ export class Persona {
         public comentarios: string = ''
     ) {}
 }
+

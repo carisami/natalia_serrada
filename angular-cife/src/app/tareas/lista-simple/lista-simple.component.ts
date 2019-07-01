@@ -47,7 +47,7 @@ export class ListaSimpleComponent implements OnInit {
   }
 
   onClickEditar(i: number) {
-    this.aTareas[i].isEdited = !this.aTareas[i].isEdited;
+    this.aTareas[i].isEdited =  !this.aTareas[i].isEdited;
     console.log(this.aTareas);
   }
 

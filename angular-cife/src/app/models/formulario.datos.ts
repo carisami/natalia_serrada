@@ -19,3 +19,4 @@ export const SEDES = [
     new Sede('BN', 'barcelona', 'Barcelona'),
     new Sede('CD', 'cadiz', 'Cádiz')
 ];
+
