@@ -1,4 +1,3 @@
-    
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TareasComponent } from './tareas.component';
@@ -12,16 +11,16 @@ describe('TareasComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ 
+      declarations: [
         TareasComponent,
         ListaSimpleComponent
-       ],
-       imports: [
-         FormsModule,
-         FontAwesomeModule
-        ]
+      ],
+      imports: [
+        FormsModule,
+        FontAwesomeModule
+      ]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

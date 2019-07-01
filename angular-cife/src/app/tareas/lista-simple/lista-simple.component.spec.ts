@@ -10,13 +10,13 @@ describe('ListaSimpleComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ListaSimpleComponent ],
+      declarations: [ListaSimpleComponent],
       imports: [
         FormsModule,
         FontAwesomeModule
       ]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
